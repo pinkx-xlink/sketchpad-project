@@ -6,3 +6,8 @@
     margin: 25px;
     display: grid;
 }
+
+.buttons {
+    display: flex;
+    height: 35px;
+}
