@@ -30,3 +30,7 @@ function changeSize(input) {
 function colorSquare() {
     this.style.backgroundColor = 'black';
 }
+
+function changeColor(choice) {
+    color = choice;
+}
