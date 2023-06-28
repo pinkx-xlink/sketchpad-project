@@ -1,4 +1,10 @@
 *
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
 .canvas {
     height: 500px;
     width: 500px;
