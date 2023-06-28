@@ -1,11 +1,17 @@
 function populateCanvas(size) {
     let canvas = document.querySelector(".canvas");
+    let squares = canvas.querySelectorAll("div");
+    squares.forEach(div=> div.remove());
     canvas.style.gridTemplateColumns = `repeat(${size} , 1fr)`;
     canvas.style.gridTemplateRows = `repeat(${size} , 1fr)`;
 
-    for (let i = 0; i < 256; i++) {
+    let amount = size * size;
+    for (let i = 0; i < amount; i++) {
         let square = document.createElement("div");
-        square.style.backgroundColor = "red";
+        square.addEventListener("mouseover", ()=> {
+            this.style.backgroundColor = 'red';
+        });
+        square.style.backgroundColor = "pink";
         canvas.insertAdjacentElement('beforeend', square);
     }
 }
@@ -13,5 +19,10 @@ function populateCanvas(size) {
 populateCanvas(16);
 
 function changeSize(input) {
-    populateCanvas(input);
+    if(input >=2 || input <=100 ){
+    populateCanvas(input);    
+    }
+    else{
+        console.log("TOO MANY SQUARES! D:")
+    }
 }
