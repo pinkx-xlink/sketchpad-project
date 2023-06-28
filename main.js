@@ -1,3 +1,5 @@
+let color = "black";
+
 function populateCanvas(size) {
     let canvas = document.querySelector(".canvas");
     let squares = canvas.querySelectorAll("div");
