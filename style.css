@@ -17,3 +17,12 @@
     height: 35px;
 }
 
+.pens {
+    display:flex;
+    flex-direction: column;
+}
+
+.special-fx {
+    display:flex;
+    flex-direction: column;
+}
