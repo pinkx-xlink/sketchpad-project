@@ -9,7 +9,7 @@ function populateCanvas(size) {
     for (let i = 0; i < amount; i++) {
         let square = document.createElement("div");
         square.addEventListener("mouseover", ()=> {
-            this.style.backgroundColor = 'red';
+            square.style.backgroundColor = "red";
         });
         square.style.backgroundColor = "pink";
         canvas.insertAdjacentElement('beforeend', square);
@@ -19,10 +19,10 @@ function populateCanvas(size) {
 populateCanvas(16);
 
 function changeSize(input) {
-    if(input >=2 || input <=100 ){
+    if(input >=2 || input <=100) {
     populateCanvas(input);    
     }
     else{
-        console.log("TOO MANY SQUARES! D:")
+        console.log("TOO MANY SQUARES! D:");
     }
 }
