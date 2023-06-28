@@ -8,25 +8,28 @@
 </head>
 <body>
     <div class="title"><h1>SketchBook Pro :)</h1></div>
-    <!--CANVAS-->
 
-    <div class="canvas" style="grid-template-columns: repeat(16, 1fr); 
-    grid-template-rows: autorepeat(16, 1fr);">
-    
-    </div>
+    <div class="content">
+        <!--CANVAS-->
 
-    <!--BUTTONS-->
-    <div class="buttons">
-        <button onclick="changeColor('black')">Black</button>
-        <button onclick="changeColor('white')">Eraser</button>
-        <button onclick="changeColor('gray')">Gray</button>
-        <button onclick="changeColor('random')">Rainbow Mode :D</button>
-    </div>
+        <div class="canvas" style="grid-template-columns: repeat(16, 1fr); 
+        grid-template-rows: autorepeat(16, 1fr);">
+        
+        </div>
 
-    <!--CHANGE SIZE-->
-    <div class="size">
-        <input type="text" placeholer="Canvas Size?" value="16" onchange="changeSize(this.value)" />
-        <button>Change Size :D</button>
+        <!--BUTTONS-->
+        <div class="buttons">
+            <button onclick="changeColor('black')">Black</button>
+            <button onclick="changeColor('white')">Eraser</button>
+            <button onclick="changeColor('gray')">Gray</button>
+            <button onclick="changeColor('random')">Rainbow Mode :D</button>
+        </div>
+
+        <!--CHANGE SIZE-->
+        <div class="size">
+            <input type="text" placeholer="Canvas Size?" value="16" onchange="changeSize(this.value)" />
+            <button>Change Size :D</button>
+        </div>
     </div>
     
     <script src="./main.js"></script>
