@@ -1,7 +1,8 @@
 *
-.container {
+.canvas {
     background-color: pink;
     height: 500px;
     width: 500px;
-  
+    margin: 25px;
+    display: grid;
 }
