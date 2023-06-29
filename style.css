@@ -39,7 +39,9 @@
     background-color: pink;
 }
 .rainbow {
+    color:white;
     border-radius: 25px;
+    font-weight: bold;
     height: 50px;
     background-image: conic-gradient(
         #fd004c,
@@ -48,7 +50,14 @@
         #3edf4b,
         #b102b7,
         #fd004c);
-        
+        /*filter:blur(5px);*/
+        transform: translateY(-50%) rotate(0);
+        transition: transform 0.3s;
+        margin:25px;
+}
+.rainbow:hover::before 
+{
+    transform: translateY(-50%) rotate(180deg);
 }
 
 .pens {

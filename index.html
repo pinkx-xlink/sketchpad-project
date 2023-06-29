@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="title"><h1>SketchBook Pro :)</h1></div>
+    <div class="title" align="center"><h1>SketchBook Pro :)</h1></div>
 
     <div class="content">
         <!--CANVAS-->
@@ -15,23 +15,25 @@
         grid-template-rows: autorepeat(16, 1fr);">
         </div>
 
-        <!--BUTTONS-->
-        <div class="buttons">
-            <div class="pens">
-                <button onclick="changeColor('black')">Black</button>
-                <button onclick="changeColor('gray')">Gray</button>
-            </div>
-            <div class="special-fx">
-                <button onclick="changeColor('white')">Eraser</button>
-                <button onclick="changeColor('random')">Rainbow Mode :D</button>
-            </div>
-        </div>
-
         <!--CHANGE SIZE-->
         <div class="size">
             <input type="text" placeholer="Canvas Size?" value="16" onchange="changeSize(this.value)" />
             <button>Change Size :D</button>
         </div>
+
+        <!--BUTTONS-->
+        <div class="buttons">
+            <div class="pens">
+                <button class="black" onclick="changeColor('black')">Black</button>
+                <button class="gray" onclick="changeColor('gray')">Gray</button>
+            </div>
+            <div class="special-fx">
+                <button class="eraser" onclick="changeColor('white')">Eraser</button>
+                <button class="rainbow" onclick="changeColor('random')">Rainbow Mode :D</button>
+            </div>
+        </div>
+
+       
     </div>
     
     <script src="./main.js"></script>
