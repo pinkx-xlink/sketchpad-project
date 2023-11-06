@@ -21,6 +21,12 @@
                 <button class="eraser" onclick="changeColor('white')">Eraser</button>
                 <button class="rainbow" onclick="changeColor('random')">Rainbow Mode :D</button>
             </div>
+
+             <!--CHANGE SIZE-->
+        <div class="size">
+            <input type="text" placeholer="Canvas Size?" value="16" onchange="changeSize(this.value)" />
+            <button>Change Size :D</button>
+        </div>
         </div>
         
         <!--CANVAS-->
@@ -28,11 +34,7 @@
         grid-template-rows: autorepeat(16, 1fr);">
         </div>
 
-        <!--CHANGE SIZE-->
-        <div class="size">
-            <input type="text" placeholer="Canvas Size?" value="16" onchange="changeSize(this.value)" />
-            <button>Change Size :D</button>
-        </div>
+       
 
        
 
