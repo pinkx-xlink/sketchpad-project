@@ -28,9 +28,8 @@ button {
     min-width: 60px;
 }
 .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    
     background-color: rgb(196, 177, 177);
     border-radius: 5px;
 }
@@ -79,9 +78,8 @@ button {
         #b102b7,
         #fd004c);
         /*filter:blur(5px);*/
-        transform: translateY(-50%) rotate(0);
-        transition: transform 0.3s;
-        margin:25px;
+        /* transform: translateY(-50%) rotate(0);
+        transition: transform 0.3s; */
 }
 .rainbow:hover {
     background-image: conic-gradient(
@@ -92,8 +90,8 @@ button {
         #59005c,
         #6b0322);
         /*filter:blur(5px);*/
-        transform: translateY(-50%) rotate(0);
-        transition: transform 0.3s;
+        /* transform: translateY(-50%) rotate(0);
+        transition: transform 0.3s; */
         box-shadow: inset 1px 2px 2px;
 }
 /* .rainbow:hover::before 
