@@ -21,8 +21,8 @@ body {
 
 .buttons {
     display: flex;
-    
-    
+    background-color: rgb(196, 177, 177);
+    border-radius: 8px;
 }
 .black {
     border-radius: 25px;
