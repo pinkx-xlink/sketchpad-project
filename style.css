@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap:wrap;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 .canvas {
@@ -21,6 +21,7 @@ body {
 
 .buttons {
     display: flex;
+    
     
 }
 .black {
