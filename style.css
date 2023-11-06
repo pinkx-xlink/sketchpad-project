@@ -29,7 +29,7 @@ button {
 }
 .buttons {
     display: grid;
-    
+    justify-items: center;
     background-color: rgb(196, 177, 177);
     border-radius: 5px;
 }
