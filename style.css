@@ -29,8 +29,10 @@ button {
 }
 .buttons {
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(196, 177, 177);
-    border-radius: 8px;
+    border-radius: 5px;
 }
 .black {
     border-radius: 25px;
